@@ -33,4 +33,3 @@ This is a task board application that allows users to manage tasks across multip
 
 - **PUT /api/tasks/:taskId/move/:listId**: Move task to another list.
 - **PUT /api/tasks/:taskId/complete**: Mark task as completed and remove from list.
-
