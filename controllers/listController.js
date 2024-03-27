@@ -15,7 +15,6 @@ exports.createList = async (req, res) => {
 
 exports.getAllLists = async (req, res) => {
   try {
-    // Implement logic to fetch all lists
     const lists = await db.List.findAll();
     res.status(200).json({ lists });
   } catch (error) {
