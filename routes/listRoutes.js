@@ -1,10 +1,12 @@
+// routes/listRoutes.js
+
 const express = require('express');
-const { List } = require('../models');
+const router = express.Router();
 const listController = require('../controllers/listController');
 
-const router = express.Router();
-
-// Create a new list
 router.post('/', listController.createList);
+router.get('/', listController.getAllLists);
+router.put('/:id', listController.updateList);
+router.delete('/:id', listController.deleteList);
 
 module.exports = router;
